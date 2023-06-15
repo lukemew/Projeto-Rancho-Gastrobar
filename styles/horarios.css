@@ -1,0 +1,167 @@
+.horarios {
+    background: url(../assets/dark-wood.jpg);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--laranja);
+}
+
+.horarios__main {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cinza-transparente);
+    border: 2px solid var(--laranja);
+    justify-content: center;
+    width: 75%;
+    height: 75%;
+}
+
+.container__horarios {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-right: 1px solid var(--laranja) ;
+    width: 50%;
+}
+
+.container__horarios h3 {
+    color: var(--laranja);
+    font: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+}
+
+.container__horarios p {
+    font: var(--fonte-secundaria);
+    font-weight: 800;
+    color: var(--branco);
+}
+
+.titulo-texto {
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.horarios-texto h3 {
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+}
+
+.horarios-texto p {
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+}
+
+.horarios__primeira-linha {
+    margin: 1rem 3rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: solid 1px var(--branco);
+}
+
+.horarios__segunda-linha {
+    margin: 0 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: solid 1px var(--branco);
+}
+
+.horarios__terceira-linha {
+    margin: 0 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: solid 1px var(--branco);
+}
+
+.horarios__quarta-linha {
+    margin: 0 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.quarta-linha__coluna > h3 {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.coluna__icones {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.coluna__icones > img {
+    width: 8%;
+}
+
+.container__imagens {
+    width: 50%;
+}
+
+.container-imagem {
+    display: block;
+    margin: 1rem auto;
+    width: 70%;
+    border: solid 1px var(--laranja);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .horarios__main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .container__horarios {
+        width: 100%;
+        border: none;
+    }
+
+    .container-imagem {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .horarios__main {
+        width: 100%;
+    }
+
+
+    .horarios__primeira-linha, .horarios__segunda-linha, .horarios__terceira-linha {
+        border: none;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0;
+        margin: rem;
+    }
+
+    .container__horarios h3 {
+        font-size: 1rem;
+
+    }
+
+    .container__horarios p {
+        margin-bottom: .5rem;
+    }
+
+    .coluna__icones{
+        display: none;
+    }
+
+}

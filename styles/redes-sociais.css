@@ -1,0 +1,92 @@
+.redes-sociais {
+    background: url(../assets/dark-wood.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--laranja) ;
+    padding: 8rem;
+}
+
+
+.redes-sociais__item{
+    margin: 2rem;
+    border: 2px solid var(--branco);
+    border-radius: 1px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.redes-sociais__item:hover{
+    backdrop-filter: blur(3px);
+    transition: 0.3s;
+}
+
+.logo__imagem {
+    width: 30%;
+}
+
+.texto__rede {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.redes-sociais__link {
+    text-decoration: none;
+    text-align: center;
+    color: var(--branco);
+    font-family: var(--fonte-secundaria);
+    font-weight: 900;
+}
+
+.redes-sociais__link:hover{
+    color: var(--laranja);
+    transition: 0.2s;
+}
+@media screen and (max-width: 1024px) {
+
+    .redes-sociais {
+        flex-direction: column;
+        border-bottom: 3px solid var(--laranja);
+        padding: 2rem;
+    }
+
+    .redes-sociais__item {
+        margin: 1rem;
+        width: 90vw;
+        
+    }
+    .logo__imagem {
+        width: 10%;
+    }
+
+    .texto__rede {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .redes-sociais__item {
+        width: 85%;
+        height: 85%;
+        gap: 1rem;
+    }
+
+    .logo__imagem{
+        width: 20%;
+        margin: 1rem;
+    }
+
+    .texto__rede {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+

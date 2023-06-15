@@ -1,0 +1,21 @@
+.carrossel__imagem {
+    filter: brightness(75%);
+}
+
+.carousel {
+    height: 700px;
+}
+
+.carousel-item {
+    height: 700px;
+}
+
+.carousel-item > img {
+    height: 700px;
+}
+
+@media screen and (max-width: 1024px) {
+    .carousel {
+        
+    }
+}

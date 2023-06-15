@@ -1,0 +1,72 @@
+.contato {
+    background: url(../assets/dark-wood.jpg);
+    background-size: cover;
+    border-bottom: 1px solid var(--laranja);
+}
+
+.contato__rancho {
+    background-color: var(--cinza-transparente);
+    margin: 6rem 0rem;
+    padding: 4rem 23rem;
+}
+
+.contato-titulo {
+    text-align: center;
+    font-family: var(--fonte-terciaria);
+    color: var(--laranja);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.contato__container {
+    display: flex;
+    gap: 5rem;
+}
+
+.contato-informacoes {
+    border-right: 1px solid var(--laranja);
+    padding-right: 2rem;
+}
+
+.contato-texto {
+    text-align: left;
+    margin-bottom: 2rem;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.informacoes-titulo {
+    font-family: var(--fonte-principal);
+    color: var(--laranja);
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+}
+
+.informacoes-texto {
+    font-family: var(--fonte-principal);
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .contato__rancho {
+        width: 100%;
+        padding: 2rem;
+        margin: 4rem 0 4rem 0;
+    }
+
+    .contato__container {
+        flex-direction: column;
+    }
+
+    .contato-informacoes {
+        border: 0;
+    }
+}

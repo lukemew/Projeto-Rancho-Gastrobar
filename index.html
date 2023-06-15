@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rancho Gastrobar</title>
+    <link rel="shortcut icon" href="./assets/rancho-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@400;700;800&family=Expletus+Sans:wght@700&family=Inter:wght@600;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body class="bg-black">
+
+    <header class="cabecalho">
+            <div class="container__menu">
+            <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="index.html" class="item-menu">Home</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="item-menu">Cardápio</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="contact.html" class="item-menu">Contatos</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="about.html" class="item-menu">Sobre</a>
+                    </li>
+                </ul>    
+            </div>
+            <div class="cabecalho__logo">
+                <a href="index.html" class="logo__link">
+                    <img class="cabecalho-imagem" src="./assets/rancho-logo.png" alt="logo do rancho gastrobar">
+                </a>
+            </div>
+            <div class="cabecalho__menu">
+                <nav class="menu-abas">
+                    <a href="index.html" class="item-menu">Home</a>
+                    <a href="#" class="item-menu">Cardápio</a>
+                    <a href="contact.html" class="item-menu">Contatos</a>
+                    <a href="about.html" class="item-menu">Sobre</a>
+                </nav>
+            </div>
+    </header>
+
+    <section class="carrossel">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/banner-hanburger.jpg" class="carrossel__imagem d-block w-100"
+                        alt="imagem de hamburguer">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/banner3.jpg" class="carrossel__imagem d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/banner2.jpg" class="carrossel__imagem d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="redes-sociais">
+        <div class="redes-sociais__item">
+
+            <a class="redes-sociais__link" href="">
+                <img class="logo__imagem" src="./assets/Logos/cardapio-logo.png" alt="">
+            </a>
+
+            <a class="redes-sociais__link" href="">
+                <h2 class="texto__rede">Cardapio</h2>
+            </a>
+        </div>
+        <div class="redes-sociais__item">
+
+            <a class="redes-sociais__link" href="">
+                <img class="logo__imagem" src="./assets/Logos/Instagram-logo.png" alt="">
+            </a>
+
+            <a class="redes-sociais__link" href="">
+                <h2 class="texto__rede">Instagram</h2>
+            </a>
+        </div>
+        <div class="redes-sociais__item">
+
+            <a class="redes-sociais__link" href="">
+                <img class="logo__imagem" src="./assets/Logos/Facebook-logo.png" alt="">
+            </a>
+
+            <a class="redes-sociais__link" href="">
+                <h2 class="texto__rede">Facebook</h2>
+            </a>
+        </div>
+        <div class="redes-sociais__item">
+
+            <a class="redes-sociais__link" href="">
+                <img class="logo__imagem ifood-logo" src="./assets/Logos/ifood-logo.png" alt="">
+            </a>
+
+            <a class="redes-sociais__link" href="">
+                <h2 class="texto__rede">Ifood</h2>
+            </a>
+        </div>
+    </section>
+
+    <section class="horarios">
+        <div class=" horarios__main m-5 p-4">
+            <div class="container__horarios">
+                <div class="horarios__titulo">
+                    <h2 class="titulo-texto">Horário de Funcionamento</h2>
+                </div>
+                <div class="horarios__primeira-linha">
+                    <div class="primeira-linha__coluna horarios-texto">
+                        <h3>Segunda</h3>
+                        <p>FECHADO</p>
+                    </div>
+                    <div class="primeira-linha__coluna horarios-texto">
+                        <h3>Terça à quinta:</h3>
+                        <p>12:00 às 15:00</p>
+                        <p>18:30 às 00:00</p>
+
+                    </div>
+                </div>
+                <div class="horarios__segunda-linha">
+                    <div class="segunda-linha__coluna horarios-texto">
+                        <h3>Sexta:</h3>
+                        <p>12:00 às 15:00</p>
+                        <p>18:30 às 00:00</p>
+
+                    </div>
+                    <div class="segunda-linha__coluna horarios-texto">
+                        <h3>Sábado:</h3>
+                        <p>12:00 às 15:00</p>
+                        <p>18:30 às 00:00</p>
+                    </div>
+                </div>
+                <div class="horarios__terceira-linha">
+                    <div class="terceira-linha__coluna horarios-texto">
+                        <h3>Domingo</h3>
+                        <p>12:00 às 15:00</p>
+                        <p>18:30 às 00:00</p>
+
+                    </div>
+                </div>
+                <div class="horarios__quarta-linha">
+                    <div class="quarta-linha__coluna">
+                        <h3>Rua: José Rangel de Araújo, 144 -</h3>
+                        <h3>Centro</h3>
+                        <h3>Boa Viagem - CE</h3>
+                        <h3>CEP: 63870-000</h3>
+                    </div>
+                    <div class="quarta-linha__coluna">
+                        <div class="coluna__icones">
+                            <img src="./assets/Logos/ifood-logo.png" alt="logo do ifood">
+                            <img src="./assets/Logos/whatsapp-logo.png" alt="logo do whatsapp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__imagens">
+                <img class="container-imagem" src="./assets/foto-rancho-2.png" alt="foto do rancho gastrobar">
+                <img class="container-imagem" src="./assets/foto-rancho-1.png"
+                    alt="foto de pessoas no rancho gastrobar">
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram p-1">
+        <h2 class="instagram__titulo text-center my-3 my-xl-5 fs-1">INSTAGRAM DO RANCHO</h2>
+        <div class="instagram__container text-center d-flex align-items-center justify-content-center ">
+            <a class="instagram__container__link d-flex align-items-center gap-2" href="https://www.instagram.com/ranchogastrobar_/">
+                <img class="instagram__container-icone" src="./assets/Logos/instagram-icon.png">
+                <h3 class="instagram__container-perfil">@ranchogastrobar_</h3>
+            </a>
+        </div>
+        <div class="instagram__cards container row mx-auto py-4 g-4 d-flex justify-content-center">
+            <div class="col-2">
+                <div class="card rounded-1">
+                    <a href="https://www.instagram.com/ranchogastrobar_/"><img class="w-100 img-fluid"
+                            src="./assets/foto1.jpg" alt="hambuguer">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="card rounded-1">
+                    <a href="https://www.instagram.com/ranchogastrobar_/"><img class="w-100 img-fluid"
+                            src="./assets/foto2.jpg" alt="hambuguer">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="card rounded-1">
+                    <a href="https://www.instagram.com/ranchogastrobar_/"><img class="w-100 img-fluid"
+                            src="./assets/foto5.jpg" alt="hambuguer">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="card rounded-1">
+                    <a href="https://www.instagram.com/ranchogastrobar_/"><img class="w-100 img-fluid"
+                            src="./assets/foto4.jpg" alt="hambuguer">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="instagram__container pb-5">
+        <button type="button" class="instagram__container-botao btn btn-secondary"><img src="./assets/Logos/Instagram-logo.png">Nos siga no instagram</button>
+        </div>
+    </section>
+
+    <section class="eventos p-1">
+        <h2 class="eventos__titulo text-center py-2 my-xl-5 fs-1">Eventos</h2>
+        <div class="eventos__container container my-5">
+            <div class="row ">
+                <div class="col-6">
+                    <div class="card mx-3">
+                        <img src="./assets/djpasquat.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@ranchogastrobar_</h5>
+                            <p class="card-text">O melhor sábado da cidade!!!!
+                                Vocês pedirão e agente atendeu neste sábado @djpasquat e @paulinhacoelhooficial
+                                E vocês não pode ficar de fora desta grande festa onde você é o nosso convidado mais do
+                                especial convida os amigos e toda família e vem se divertir no melhor sábado da cidade !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card mx-3">
+                        <img src="./assets/evento1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@ranchogastrobar_</h5>
+                            <p class="card-text">Passando para fazer um convite muito especial: neste sábado dia 25
+                                Março você fazer parte desta grande festa onde você é o nosso convidado especial. Então
+                                chama os amigos e toda família e vem se divertir, aqui cerveja gelada e muita diversão
+                                não pode faltar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="eventos__agendar">
+            <a class="eventos__agendar-link" href="#">Agende um evento conosco</a>
+        </div>
+
+        <a href="https://api.whatsapp.com/send?phone=+5588981797621&text=Olá,%20desejo%20me%20matricular!" class="float"
+            target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        
+        <footer class="rodape text-center">
+            <div class="rodape__logo">
+                <a href="index.html" class="logo-rodape__link">
+                    <img class="rodape__imagem" src="./assets/rancho-logo.png" alt="logo do rancho gastrobar">
+                </a>
+            </div>
+            <div class="rodape__endereço">
+                <div class="rodape__endereço-texto">
+                    <h3>Rua: José Rangel de Araújo, 144 -</h3>
+                    <h3>Centro</h3>
+                    <h3>Boa Viagem - CE</h3>
+                    <h3>CEP: 63870-000</h3>
+                </div>
+            </div>
+            <div class="rodape__icones">
+                <a href="#" class="rodape-icone"><img src="./assets/Logos/Facebook-logo.png" alt="link para o facebook do rancho"></a>
+                <a href="#" class="rodape-icone"><img src="./assets/Logos/Instagram-logo.png" alt="link para o instagram do rancho"></a>
+            </div>
+        </footer>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
