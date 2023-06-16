@@ -34,6 +34,7 @@
 }
 
 .lista-menu {
+    
     display: none;
 }
 
@@ -132,6 +133,10 @@
         border: solid 1px var(--laranja);
         background-clip: text;
         text-transform: uppercase;
+    }
+
+    .lista-menu__item > a {
+        font-family: var(--fonte-secundaria);
     }
 
     .lista-menu__item:hover{

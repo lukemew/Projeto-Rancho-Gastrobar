@@ -1,5 +1,5 @@
 .instagram {
-    background: url(../assets/wood-texture3.jpg);
+    background: url(../assets/wood-texture2.jpg);
     background-size: cover;
     border-bottom: 1px solid var(--laranja);
     padding: 2rem;
@@ -94,6 +94,10 @@
 
 @media screen and (max-width: 640px) {
     .instagram__cards {
+        padding: 1rem;
+    }
+
+    .instagram {
         padding: 1rem;
     }
     

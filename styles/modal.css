@@ -2,6 +2,7 @@
     background-color: var(--preto-transparente);
  }
 
+ 
  .modal-content {
     background-color: var(--preto);
  }
@@ -54,8 +55,8 @@
  @media screen and (max-width: 640px) {
     .modal-cardapio__bebida,
     .modal-cardapio__comida {
-        margin: 2em 2em;
-        padding: 2em;
+        margin: 1em 1em;
+        padding: 1em;
     }
-    
  }
+
