@@ -1,6 +1,7 @@
 .redes-sociais {
-    background: url(../assets/dark-wood.jpg);
+    background: url(../assets/wood-texture_blur.jpg);
     background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -29,6 +30,10 @@
 
 .logo__imagem {
     width: 30%;
+}
+
+.ifood-logo {
+    width: 50%;
 }
 
 .texto__rede {
