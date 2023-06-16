@@ -27,7 +27,9 @@
                     <a href="index.html" class="item-menu">Home</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="item-menu">Cardápio</a>
+                    <a href="#" class="item-menu" data-bs-toggle="modal" data-bs-target="#JanelaModal">
+                        Cardápio
+                    </a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="contact.html" class="item-menu">Contatos</a>
@@ -45,13 +47,35 @@
         <div class="cabecalho__menu">
             <nav class="menu-abas">
                 <a href="index.html" class="item-menu">Home</a>
-                <a href="#" class="item-menu">Cardápio</a>
+                <a href="#" class="item-menu" data-bs-toggle="modal" data-bs-target="#JanelaModal">Cardápio</a>
                 <a href="contact.html" class="item-menu">Contatos</a>
                 <a href="about.html" class="item-menu">Sobre</a>
             </nav>
         </div>
     </header>
 
+    <section class="cardapio">
+        <div id="JanelaModal" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body d-flex justify-content-center nowrap">
+                        <div class="modal-cardapio__comida">
+                            <a href="#" class="modal-link">
+                            <img class="cardapio-imagem" src="./assets/Logos/Prato-logo.svg" alt="">
+                            <h3 class="cardapio-texto">Cardápio Comidas</h3>
+                            </a>
+                        </div>
+                        <div class="modal-cardapio__bebida">
+                            <a href="#" class="modal-link">
+                            <img class="cardapio-imagem" src="./assets/Logos/Bebida-logo.svg" alt="">
+                            <h3 class="cardapio-texto">Cardápio Bebidas</h3>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="sobre__rancho">
         <h1 class="sobre-titulo">SOBRE O RANCHO</h1>

@@ -29,7 +29,9 @@
                         <a href="index.html" class="item-menu">Home</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="item-menu">Cardápio</a>
+                        <a href="#" class="item-menu" data-bs-toggle="modal" data-bs-target="#JanelaModal">
+                            Cardápio
+                        </a>
                     </li>
                     <li class="lista-menu__item">
                         <a href="contact.html" class="item-menu">Contatos</a>
@@ -47,12 +49,35 @@
             <div class="cabecalho__menu">
                 <nav class="menu-abas">
                     <a href="index.html" class="item-menu">Home</a>
-                    <a href="#" class="item-menu">Cardápio</a>
+                    <a href="#" class="item-menu" data-bs-toggle="modal" data-bs-target="#JanelaModal">Cardápio</a>
                     <a href="contact.html" class="item-menu">Contatos</a>
                     <a href="about.html" class="item-menu">Sobre</a>
                 </nav>
             </div>
     </header>
+
+    <section class="cardapio">
+        <div id="JanelaModal" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body d-flex justify-content-center nowrap">
+                        <div class="modal-cardapio__comida">
+                            <a href="#" class="modal-link">
+                            <img class="cardapio-imagem" src="./assets/Logos/Prato-logo.svg" alt="">
+                            <h3 class="cardapio-texto">Cardápio Comidas</h3>
+                            </a>
+                        </div>
+                        <div class="modal-cardapio__bebida">
+                            <a href="#" class="modal-link">
+                            <img class="cardapio-imagem" src="./assets/Logos/Bebida-logo.svg" alt="">
+                            <h3 class="cardapio-texto">Cardápio Bebidas</h3>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="carrossel">
         <div id="carouselExample" class="carousel slide">
@@ -82,11 +107,11 @@
     <section class="redes-sociais">
         <div class="redes-sociais__item">
 
-            <a class="redes-sociais__link" href="">
+            <a class="redes-sociais__link" href="" data-bs-toggle="modal" data-bs-target="#JanelaModal">
                 <img class="logo__imagem" src="./assets/Logos/cardapio-logo.png" alt="">
             </a>
 
-            <a class="redes-sociais__link" href="">
+            <a class="redes-sociais__link" href="" data-bs-toggle="modal" data-bs-target="#JanelaModal">
                 <h2 class="texto__rede">Cardapio</h2>
             </a>
         </div>
@@ -299,7 +324,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        })
+    
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,65 @@
+.modal-backdrop {
+    background-color: var(--preto-transparente);
+ }
+
+ .modal-content {
+    background-color: var(--preto);
+ }
+
+ .modal-cardapio__bebida {
+    border: solid 1px var(--laranja);
+    padding: 2rem;
+    margin: 4rem 2rem;
+    width: 50%;
+
+ }
+ .modal-cardapio__comida {
+    border: solid 1px var(--laranja);
+    padding: 2rem;
+    margin: 4rem 2rem;
+    width: 50%;
+  
+}
+
+.modal-cardapio__bebida:hover, .modal-cardapio__comida:hover{
+    background-color: var(--laranja);
+    border: 1px solid var(--preto);
+    border-radius: 10%;
+    transition: 0.8s;
+}
+
+.modal-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+ 
+ .cardapio-imagem {
+    width: 80%;
+ }
+
+ .cardapio-texto {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--branco);
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-weight: 900;
+    text-align: center;
+ }
+
+ @media screen and (max-width: 640px) {
+    .modal-cardapio__bebida,
+    .modal-cardapio__comida {
+        margin: 2em 2em;
+        padding: 2em;
+    }
+    .modal-body {
+        
+    }
+    
+    
+ }

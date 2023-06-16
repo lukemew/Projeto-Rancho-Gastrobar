@@ -1,5 +1,6 @@
 @import url(./styles/header.css);
 @import url(./styles/carrossel.css);
+@import url(./styles/modal.css);
 @import url(./styles/redes-sociais.css);
 @import url(./styles/horarios.css);
 @import url(./styles/instagram.css);
@@ -16,7 +17,7 @@
     --branco: #ffffff;
     --laranja: #FA6111;
     --laranja-fraco: #A44513;
-    --marrom: #140A05;
+    --marrom: rgb(20, 10, 5);
     --cinza-transparente: rgba(17, 17, 17, 0.85);
     --laranja-transparente: rgba(248, 114, 4, 0.262);
     --preto-transparente: rgba(0, 0, 0, 0.9);
@@ -28,3 +29,4 @@
 body {
     background: linear-gradient(to right, #000000, #2524245d);
 }
+
