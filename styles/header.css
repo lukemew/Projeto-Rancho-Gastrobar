@@ -79,8 +79,9 @@
         background-image: url(../assets/menu.png);
     }
 
-    .container__botao:checked ~.container__rotulo {
-        background: var(--laranja);
+    .container__botao:checked ~.container__rotulo>.cabeçalho__menu-hamburguer {
+        transition: 0.3s;
+        background-image: url(../assets/menu_aberto.png);;
     }
 
     .cabecalho__menu {
