@@ -1,11 +1,13 @@
 .eventos {
     background: url(../assets/dark-wood.jpg);
+    padding-top: 1rem;
 }
 
 .eventos__titulo {
     font-family: var(--fonte-principal);
     font-weight: 800;
     color: var(--laranja);
+    margin-top: 2rem;
 }
 
 .eventos__container {
@@ -17,7 +19,7 @@
 }
 
 .eventos__agendar {
-    margin: 4rem;
+    margin: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -28,12 +30,27 @@
     font-family: var(--fonte-principal);
     font-weight: 800;
     font-size: 1.5rem;
+    text-align: center;
     padding: 1rem 3.5rem;
     border-radius: 30px;
     background-color: var(--laranja-transparente);
 }
 
 .eventos__agendar-link:hover {
-    transition: 0.4s;
+    transition: 0.2s;
+    background-color: var(--preto-transparente);
     color: var(--laranja-fraco);
+}
+
+@media screen and (max-width: 1024px) {
+    .eventos__agendar-link {
+        background-color: var(--preto-transparente);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .eventos__container {
+        width: 85%;
+    }
+    
 }

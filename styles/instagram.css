@@ -2,12 +2,15 @@
     background: url(../assets/dark-wood.jpg);
     background-size: cover;
     border-bottom: 1px solid var(--laranja);
+    padding: 2rem;
 }
 
 .instagram__titulo {
     font-family: var(--fonte-principal);
     font-weight: 800;
     color: var(--laranja);
+    margin: 1rem;
+    padding-bottom: 1rem;
 }
 
 .instagram__container-icone {
@@ -19,6 +22,23 @@
     font-weight: 400;
     color: var(--laranja);
     font-size: 2rem;
+    border-right: solid 4px var(--laranja) ;
+    width: 17ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(16), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .instagram__cards .card {
@@ -48,4 +68,33 @@
 
 .instagram__container-botao > img {
     width: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .instagram {
+        border-bottom: 3px solid var(--laranja);
+        padding: 3rem;
+    }
+
+    .instagram__container-perfil {
+        font-size: 1.6rem;
+    }
+
+    .instagram__container__link {
+        flex-direction: column;
+        background-color: var(--cinza-transparente);
+        padding: 1rem;
+        border: solid 3px var(--laranja);
+    }
+
+    .instagram__container-icone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .instagram__cards {
+        padding: 1rem;
+    }
+    
 }

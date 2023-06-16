@@ -58,8 +58,13 @@
 @media screen and (max-width: 1024px) {
     .contato__rancho {
         width: 100%;
-        padding: 2rem;
+        padding: 4rem;
         margin: 4rem 0 4rem 0;
+    }
+
+    .informacoes-texto {
+        word-wrap: break-word;
+        padding-bottom: 1rem;
     }
 
     .contato__container {

@@ -127,7 +127,7 @@
     
     .lista-menu__item {
         padding: 1.5rem;
-        background-color: var(--marrom);
+        background-color: var(--preto-transparente);
         border: solid 1px var(--laranja);
         background-clip: text;
         text-transform: uppercase;
