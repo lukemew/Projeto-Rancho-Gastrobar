@@ -71,6 +71,10 @@
         width: 10%;
     }
 
+    .ifood-logo {
+        width: 20%;
+    }
+
     .texto__rede {
         font-size: 3rem;
     }
@@ -93,6 +97,12 @@
         width: 35%;
         margin: 1rem;
     }
+
+    .ifood-logo {
+        margin-bottom: 1.8rem;
+        width: 50%;
+    }
+
 
     .texto__rede {
         font-size: 1.6rem;
